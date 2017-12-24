@@ -1,0 +1,35 @@
+Plugin\MyFukuoka\Entity\MyFukuoka:
+    type: entity
+    table: plg_my_fukuoka
+    repositoryClass: Plugin\MyFukuoka\Repository\MyFukuokaRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: my_fukuoka_id
+            generator:
+                strategy: AUTO
+    fields:
+        my_fukuoka_contents:
+            type: text
+            nullable: true
+        my_fukuoka_contents_02:
+            type: text
+            nullable: true
+        my_fukuoka_contents_03:
+            type: text
+            nullable: true
+        del_flg:
+            type: smallint
+            nullable: false
+            unsigned: false
+            default: '0'
+        create_date:
+            type: datetime
+            nullable: false
+        update_date:
+            type: datetime
+            nullable: false
+    lifecycleCallbacks: {  }

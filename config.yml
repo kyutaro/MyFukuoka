@@ -1,0 +1,7 @@
+name: MyFukuoka
+code: MyFukuoka
+version: 1.0.1
+service:
+    - MyFukuokaServiceProvider
+orm.path:
+    - /Resource/doctrine
